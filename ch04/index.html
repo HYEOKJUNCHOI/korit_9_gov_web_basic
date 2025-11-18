@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: red;
+        }
+        h1 { 
+            font-size: 100px;
+            color: blue;
+        }
+
+        input {
+            width: 300px;
+        }
+
+        /* #id > .class > li 
+        id는 유일하게 하나만 존재 해야할 때 씀 
+        우선순위 클래스로 잡고 진행  */
+
+        .c1 { color: green;}
+        .c2 { color: burlywood;}
+        .c3 { color: yellowgreen;}
+
+        li {
+            color: pink;
+            font-size: 20px;
+        }
+
+        #id1 {
+            color: blueviolet;
+        }
+
+        /* !important 붙이면 어떤것보다 우선순위가 높다 */
+
+        .p-content {
+            color: darkblue !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h2>제목2</h2>
+    <h2>제목2</h2>
+    <h2>제목2</h2>
+    <h2>제목2</h2>
+    <input type="text">
+    <input type="text">
+
+    <ul>
+        <li class="c1" id="id1">최혁준</li>
+        <li class="c2">최다솔</li>
+        <li class="c3" id="id1">최다빈</li>
+    </ul>
+
+    <!-- 가능한 한줄 css는 하지않음 , 유지/보수할때 일일이 찾아가야함 -->
+    <p class="p-content" style="color: brown; font-size: 20px;">문서 내용을 입력하였습니다.</p>
+
+</body>
+</html>
