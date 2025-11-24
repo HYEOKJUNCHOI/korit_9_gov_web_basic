@@ -1,11 +1,12 @@
 html {
     height: 100vh;
+    background-color: #fafafa;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 10px;
     height: 100%;
 }
 
@@ -39,7 +40,8 @@ body {
 }
 
 .btn-mustard {
-    background-color: #ffc107;
+    background-color: #c1e8ff;
+    color: #333333;
 
     &:hover {
         background-color: #ffb404;
@@ -51,7 +53,7 @@ body {
 }
 
 .btn-error {
-    background-color: #dc3545;
+    background-color: #7e9fc8;
     color: #ffffff;
     &:hover {
         background-color: #cc3545;

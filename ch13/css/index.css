@@ -1,15 +1,19 @@
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
+    
+    margin: 5px 0;
+    border-radius: 6px;
     padding: 10px;
     height: 50px;
-    background-color: #a4a4a4;
+    background-color: #112250;
 
     .main-title {
         margin: 0;
         font-size: 15px;
-        color: #fff;
+        color: #e0c58e;
         cursor: default;
     }
 }
@@ -17,14 +21,15 @@ header {
 main {
     display: flex;
     flex-grow: 1;
-    background-color: #fafafa;
 }
 
 aside {
+    border-radius: 6px;
     min-width: 200px;
     width: 200px;
     height: 100%;
-    background-color: gray;
+    background-color: #05275b;
+    overflow: hidden;
 
     .aside-top {
         display: flex;
@@ -33,12 +38,12 @@ aside {
         align-items: center;
         gap: 5px;
         padding: 20px 0;
-        background-color: #2f2f2f;
+        background-color: #030e22;
 
         .aside-student-name {
             margin: 0;
             font-size: 17px;
-            color: #ffffff;
+            color: #e0c58e;
             cursor: default;
         }
     }
@@ -59,7 +64,7 @@ aside {
             align-items: center;
             margin: 1px 0;
             padding: 15px;
-            background-color: #808080;
+            background-color: #06214e;
 
             &:hover {
                 background-color: #5f5f5f;
@@ -87,7 +92,7 @@ article {
     flex-direction: column;
     flex-grow: 1;
     box-sizing: border-box;
-    padding: 8px;
+    padding-left: 10px;
     min-width: 1000px;
 
     .main-top {
@@ -164,7 +169,7 @@ article {
     margin: 10px 0;
     border-radius: 4px;
     padding: 10px;
-    background-color: #2f2f2f;
+    background-color: #030e22;
 
     & > a {
         text-decoration: none;
@@ -180,5 +185,7 @@ article {
             transform: scale(105%);
             text-shadow: 0 0 5px #ffffff33;
         }
+        
     }
+    
 }

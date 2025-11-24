@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수
+        function fx1() {
+            console.log("함수1 호출");
+        }
+        
+        function fx1() {
+            console.log("함수1 호출!!!");
+        }
+
+        fx1();
+        fx4();
+
+        let fx2 = fx1;
+        let fx3 = fx2;
+        console.log(typeof fx1);
+
+        // 리턴될때마다 재정의됨 주소값 바뀜 
+        function fx4() {
+            return function fx5() {
+                console.log("함수5 호출!!!!!")
+            }
+        }
+        
+        let fx6 = fx4();
+        let fx7 = fx4();
+        
+        fx6(); // 주소 100
+        fx7(); // 주소 200
+       
+        let fx8 = fx4();
+        let fx = fx4();
+
+        console.log(fx6 === fx7); // 그래서 false값이 나옴
+        console.log(fx8 === fx9);
+
+    </script>
+</body>
+</html>
